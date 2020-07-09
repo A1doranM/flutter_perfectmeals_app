@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_complete_guide/category_meals_screen.dart';
 
-import './categories_screen.dart';
+import 'file:///C:/Users/aldor/AndroidStudioProjects/flutter_perfectmeals_app/lib/screens/category_meals_screen.dart';
+
+import 'screens/categories_screen.dart';
 
 void main() => runApp(MyApp());
 
