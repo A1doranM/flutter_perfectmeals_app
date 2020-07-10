@@ -8,7 +8,8 @@ class CategoryItem extends StatelessWidget {
   final String title;
   final Color color;
 
-  CategoryItem({@required this.id, @required this.title, @required this.color});
+  const CategoryItem(
+      {@required this.id, @required this.title, @required this.color});
 
   void selectCategory(BuildContext ctx) {
     Navigator.of(ctx).pushNamed(CategoryMealsScreen.routeName, arguments: {
