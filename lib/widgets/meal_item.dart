@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../screens/meal_detail_screen.dart';
 import '../models/meal.dart';
+import '../screens/meal_detail_screen.dart';
 
 class MealItem extends StatelessWidget {
   final String id;
@@ -10,7 +10,6 @@ class MealItem extends StatelessWidget {
   final int duration;
   final Complexity complexity;
   final Affordability affordability;
-  final Function removeItem;
 
   MealItem(
       {@required this.id,
@@ -18,8 +17,7 @@ class MealItem extends StatelessWidget {
       @required this.imageUrl,
       @required this.affordability,
       @required this.complexity,
-      @required this.duration,
-      @required this.removeItem});
+      @required this.duration});
 
   String get complexityText {
     switch (complexity) {
@@ -61,7 +59,7 @@ class MealItem extends StatelessWidget {
     )
         .then((result) {
       if (result != null) {
-        removeItem(result);
+        //removeItem(result);
       }
     });
   }
